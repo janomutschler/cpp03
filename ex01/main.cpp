@@ -6,11 +6,12 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 09:57:59 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/30 14:10:39 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/30 15:02:20 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
 #include <iostream>
 
 int main()
@@ -41,4 +42,6 @@ int main()
 	sx.attack("Enemy");
 	sx.status();
 	sa.guardGate();
+
+	std::cout << "\n\nDestructor:\n";
 }

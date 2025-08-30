@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 09:57:56 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/30 13:46:16 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/30 15:01:58 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ ClapTrap&	ClapTrap::operator=(const ClapTrap& src)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "ClapTrap destructor called for: " << _name << "\n";
+	std::cout << "ClapTrap destructor called for: " << _name << "\n\n";
 }
 
 bool	checkIfDead(const int& hp, const std::string& name)
@@ -95,7 +95,7 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	std::cout	<< "ClapTrap " << _name
 				<< " repairs itself by " << amount
 				<< " hit points.\n"
-				<< "Clap Trap HP: " << _hitPoints << "\n";
+				<< "ClapTrap HP: " << _hitPoints << "\n";
 }
 
 void	ClapTrap::takeDamage(unsigned int amount)
@@ -114,7 +114,7 @@ void	ClapTrap::takeDamage(unsigned int amount)
 		_hitPoints -= static_cast<int>(amount);
 		std::cout	<< "ClapTrap " << _name
 					<<" takes " << amount << " damage\n"
-					<< "Clap Trap HP: " << _hitPoints << "\n";
+					<< "ClapTrap HP: " << _hitPoints << "\n";
 	}
 }
 

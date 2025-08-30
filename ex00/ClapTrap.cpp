@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 09:57:56 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/30 12:12:27 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:53:35 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	std::cout	<< "ClapTrap " << _name
 				<< " repairs itself by " << amount
 				<< " hit points.\n"
-				<< "Clap Trap HP: " << _hitPoints << "\n";
+				<< "ClapTrap HP: " << _hitPoints << "\n";
 }
 
 void	ClapTrap::takeDamage(unsigned int amount)
@@ -114,7 +114,7 @@ void	ClapTrap::takeDamage(unsigned int amount)
 		_hitPoints -= static_cast<int>(amount);
 		std::cout	<< "ClapTrap " << _name
 					<<" takes " << amount << " damage\n"
-					<< "Clap Trap HP: " << _hitPoints << "\n";
+					<< "ClapTrap HP: " << _hitPoints << "\n";
 	}
 }
 
