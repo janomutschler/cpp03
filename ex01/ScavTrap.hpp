@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 12:25:24 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/30 13:53:51 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/30 15:27:24 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ class ScavTrap : public ClapTrap
 	public:
 		ScavTrap();
 		ScavTrap(const std::string& name);
-		ScavTrap(const ScavTrap& other);
-		ScavTrap& operator=(const ScavTrap& other);
+		ScavTrap(const ScavTrap& src);
+		ScavTrap& operator=(const ScavTrap& src);
 		~ScavTrap();
 
 		void	attack(const std::string& target);

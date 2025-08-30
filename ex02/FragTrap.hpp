@@ -6,7 +6,7 @@
 /*   By: jmutschl <jmutschl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 14:37:14 by jmutschl          #+#    #+#             */
-/*   Updated: 2025/08/30 14:43:23 by jmutschl         ###   ########.fr       */
+/*   Updated: 2025/08/30 15:27:11 by jmutschl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ class FragTrap : public ClapTrap
 	public:
 		FragTrap();
 		FragTrap(const std::string& name);
-		FragTrap(const FragTrap& other);
-		FragTrap& operator=(const FragTrap& other);
+		FragTrap(const FragTrap& src);
+		FragTrap& operator=(const FragTrap& src);
 		~FragTrap();
 
 		void highFivesGuys(void);
